@@ -1,0 +1,26 @@
+@font-face {
+    font-family: cooper;
+    src: url(assets/fonts/CooperHewitt-Bold.woff);
+}
+
+@font-face {
+    font-family: pressuraMono;
+    src: url(assets/fonts/GTPressuraMono.woff);
+}
+
+@font-face {
+    font-family: pressura;
+    src: url(assets/fonts/GT-Pressura-Regular.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    overflow: hidden;
+    color: rgb(29, 108, 147);
+}

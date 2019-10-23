@@ -1,0 +1,125 @@
+/*MODAL*/
+.modal_overlay {
+    background: rgba(0, 0, 0, .45);
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal {
+    background: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 10px 40px;
+}
+
+.modal_cancel-btn,
+.modal_change-btn {
+    width: 135px;
+    height: 50px;
+    margin: 0 auto;
+    border: none;
+    background: #fff;
+    font-family: cooper;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all .2s ease;
+}
+
+.modal_cancel-btn {
+    color: #9B9B9B;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, .2);
+}
+
+.modal_cancel-btn:hover {
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, .2);
+}
+
+.modal_change-btn {
+    color: #E87763;
+    border: 1px solid #E87763;
+    box-shadow: 0px 10px 10px 0px rgba(232, 120, 100, 0.42);
+}
+
+.modal_change-btn:hover {
+    box-shadow: 0px 2px 4px 1px rgba(232, 120, 100, 0.42);
+    color: white;
+    background-color: #E87763;
+}
+
+.modal_actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px;
+}
+/*CALENDAR*/
+.calendar {
+    border-spacing: 5px;
+    width: 100%;
+}
+
+.calendar-header {
+    font-size: 18px;
+    font-family: cooper;
+}
+
+.calendar-header td {
+    border-spacing: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.day,
+.empty-slot,
+.week-day {
+    text-align: center;
+    height: 50px;
+    font-family: pressuraMono;
+    font-size: 20px;
+}
+
+.week-day {
+    visibility: hidden;
+    text-align: right;
+}
+
+.week-day::first-letter {
+    visibility: visible;
+}
+
+.day {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e87864;
+    line-height: 50px;
+    color: #e87864;
+}
+
+.day:hover {
+    background-color: rgb(251, 154, 137);
+    color: white;
+}
+
+.day.unavailable-day {
+    background: #D8D8D8;
+    color: #9B9B9B;
+    pointer-events: none;
+    border-color: #d8d8d8;
+}
+
+.current-day {
+    background-color: #E87763;
+    color: white;
+}
+
+.selected-day {
+    background-color: #E87763;
+    color: #fff;
+}
